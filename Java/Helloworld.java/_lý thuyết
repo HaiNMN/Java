@@ -1,0 +1,40 @@
+_______________________________________________________________
+nghĩa các lớp :
+
+1 : [public] : lớp được truy xuất chung cho các Package kahcs , mặc định chỉ cho các đoạn mã trong cùng một gói mới có quyền truy xuất nó
+2 : [abstract] : lớp trừu tượng , không thể khởi tạo
+3 : [final] : lớp hằng không có lớp con , không kế thừa 
+4 : [class] : tên lớp
+5 : [extends SuperClass] : kế thừa lớp cha SuperClass
+6 : [implements Interfaces] : giao diện được cài đặt bới class
+7 : 
+_______________________________________________________________
+1 : có 2 kiểu dữ liệu
+
++ Primitive types : đây là các con số 
+
++ Reference types : đây là các lớp 
+  + ví dụ : Myclass myObj = new Myclass();
+
+_______________________________________________________________
+khới tạo đối tượng : 
+
+public class Point 
+{
+    public int x =0;
+    public int y =0;
+
+    //; A constructor
+    public Point (int diem1 , int diem2)
+    {
+        this.x = diem1;
+        this.y = diem2;
+    }
+
+    public static void main(String[] args)
+    {
+        Point _point = new Point(23,43);
+    }
+
+    //; lúc này x và y của _point là 23 và 43
+}
