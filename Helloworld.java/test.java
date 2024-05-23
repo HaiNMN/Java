@@ -6,20 +6,30 @@ import javax.swing.JPanel;
 
 public class test extends JFrame {
 
-    public test ()
-    {
-        setSize(400,400);
-        setLocationRelativeTo(null);
-        JPanel panel = new JPanel();
-        add(panel);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        int attempt = 1;
 
-        JLabel label = new JLabel("Caculater");
-        panel.add(label);
+        do {
+            System.out.print("Input the string " + attempt + ": ");
+            input = scanner.nextLine();
+            try {
+                validateString(input);
+                System.out.println("The string is " + input);
+                break;
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                attempt++;
+            }
+        } while (true);
+
+        scanner.close();
     }
 
-    public static void main(String[] agnt)
-    {
-        new test().setVisible(true);
-        
+    public static void validateString(String str) throws Exception {
+        if (!str.matches("SE\\d{3}")) { // SExxx where x is a digit
+            throw new Exception("The string is invalid");
+        }
     }
 }

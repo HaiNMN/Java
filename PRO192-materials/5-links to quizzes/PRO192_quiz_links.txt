@@ -1,0 +1,8 @@
+Core Java Quiz:
+https://www.digitalocean.com/community/tutorials/core-java-quiz
+
+Java multiple choice questions and answers:
+http://www.sanfoundry.com/java-questions-answers-freshers-experienced/
+
+Online Java Programming Test
+https://www.indiabix.com/online-test/java-programming-test/

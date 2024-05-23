@@ -1,0 +1,6 @@
+Hoa  | 22
+La   | 23
+Canh | 19
+Cay  | 20
+Goc  | 18
+Re   | 21
